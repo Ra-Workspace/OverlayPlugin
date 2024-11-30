@@ -19,7 +19,6 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors.ClientFramework
         {
             this.container = container;
             container.Register<IClientFrameworkMemory70, ClientFrameworkMemory70>();
-            container.Register<IClientFrameworkMemory655, ClientFrameworkMemory655>();
             repository = container.Resolve<FFXIVRepository>();
 
             var ffxivMemory = container.Resolve<FFXIVMemory>();

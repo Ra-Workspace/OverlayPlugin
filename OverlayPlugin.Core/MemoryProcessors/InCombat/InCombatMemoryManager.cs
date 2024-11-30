@@ -40,7 +40,6 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors.InCombat
         {
             List<IInCombatMemory> candidates = new List<IInCombatMemory>();
             candidates.Add(container.Resolve<IInCombatMemory70>());
-            candidates.Add(container.Resolve<IInCombatMemory61>());
             memory = FFXIVMemory.FindCandidate(candidates, repository.GetMachinaRegion());
         }
 

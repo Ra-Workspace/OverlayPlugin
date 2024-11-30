@@ -32,7 +32,6 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors.ContentFinderSettings
         public ContentFinderSettingsMemoryManager(TinyIoCContainer container)
         {
             this.container = container;
-            container.Register<IContentFinderSettingsMemory651, ContentFinderSettingsMemory651>();
             container.Register<IContentFinderSettingsMemory70, ContentFinderSettingsMemory70>();
             container.Register<IContentFinderSettingsMemory71, ContentFinderSettingsMemory71>();
             repository = container.Resolve<FFXIVRepository>();

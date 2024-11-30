@@ -43,7 +43,6 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors.Combatant
         public void ScanPointers()
         {
             List<ICombatantMemory> candidates = new List<ICombatantMemory>();
-            candidates.Add(container.Resolve<ICombatantMemory65>());
             candidates.Add(container.Resolve<ICombatantMemory70>());
             candidates.Add(container.Resolve<ICombatantMemory71>());
             memory = FFXIVMemory.FindCandidate(candidates, repository.GetMachinaRegion());
