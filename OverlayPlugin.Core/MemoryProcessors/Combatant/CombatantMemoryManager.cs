@@ -21,7 +21,6 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors.Combatant
         public CombatantMemoryManager(TinyIoCContainer container)
         {
             this.container = container;
-            container.Register<ICombatantMemory65, CombatantMemory65>();
             container.Register<ICombatantMemory70, CombatantMemory70>();
             container.Register<ICombatantMemory71, CombatantMemory71>();
             repository = container.Resolve<FFXIVRepository>();
